@@ -1,0 +1,70 @@
+<html>
+  <header>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    
+  <h1 id="title">Coffee Survey Form</h1>
+  </header>
+  
+  <body>
+  <p id="description">Fill details below to complete your order</p>
+  
+  <form id="survey-form">
+    
+    <div class="input-headings">
+    
+    <label for="name" id="name-label">Name</label>
+    <input id="name" type="text" name="name" placeholder="Full name" class="form-inputs" required></input>
+    <br>
+   <label for="email" id="email-label">Email</label>
+   <input id="email" type="email" name="email" placeholder="my_email@server.com" class="form-inputs" required></input>
+  <br>
+  <label for="number" id="number-label">Age</label>
+  <input id="number" type="number" name="number" placeholder="18" min="18" max="100" class="form-inputs" required></input>
+<br>
+
+<label for="dropdown" id="model">Select type</label>
+<select id="dropdown" class="form-inputs">
+  <option value="espresso">Espresso</option>
+  <option value="cafe_au_Lait">Café au Lait</option>
+  <option value="macchiato">Macchiato</option>
+  <option value="cold_brew">Cold Brew</option>
+</select>
+    <br>
+    <br>
+    <!-- dropdown menu colors -->
+<label for="model_color" id="model_color"><b>Coffee Sizes:</b></label>
+<br>
+  <input id="model_color" type="radio" id="black" name="color" value="small">
+  <label for="model_color"> Small </label>
+  <br>
+  <input id="model_color" type="radio" id="black" name="color" value="medium">
+  <label for="model_color"> Medium </label>
+  <br>
+  <input id="model_color" type="radio" id="black" name="color" value="large">
+  <label for="model_color"> Large </label>
+  <br>
+  <br>
+<!-- dropdown menu colors -->
+<label for="features"><b>Add features:</b></label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="2milk">
+<label for="checkbox"> 2% milk (lowfat milk) - $2,0 </label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="almondmilk">
+<label for="checkbox"> Chocolate powder - $1,00 </label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="chantilly">
+<label for="checkbox"> Chantilly - $3,00 </label>           <br>
+<br>
+<!-- text area-->
+<label id="textarea"> Additional Comments:</label>
+<br>
+<textarea id="textarea" name="instructions" rows="5" cols="59.5">
+</textarea>
+<br>
+ <input id="submit" type="submit" value="place your order" class="submit-button">
+  </div>
+</form>
+    
+</body>
+</html>
